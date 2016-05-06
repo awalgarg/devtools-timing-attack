@@ -33,7 +33,7 @@ function heavyTask(arg) {
 		buffer.push(el);
 	}
 	for (var i = 0; i <= arg; i++) {
-		document.head.appendChild(buffer[i]);
+		document.head.removeChild(buffer[i]);
 	}
 }
 
